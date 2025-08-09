@@ -1,28 +1,67 @@
-  * {
+    /* Default styles and set font */
+    * {
       margin: 0; padding: 0; box-sizing: border-box;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
+    /* Body background with a image and overlay */
     body {
-      background: #f5f8fa;
-      color: var(--deep-blue);
+      background: #4984B8;
+      background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://cdn.mos.cms.futurecdn.net/Cfa6Mzs7vxXZzmfLiD84JC-1200-80.jpg);
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      color: #060558;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    /* The center and style of header */
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #040273;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+    /* Styling for navigation bar */
+    nav {
+      max-width: 900px;
+      margin: 0 auto 40px;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      font-weight: 600;
+    }
+    /* Styling for navigation links */
+    nav a {
+      text-decoration: none;
+      color: #040273;
+      padding: 8px 16px;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+      border: 2px solid transparent;
+    }
+
+    body {
+      background: #4984B8;
+      background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://cdn.mos.cms.futurecdn.net/Cfa6Mzs7vxXZzmfLiD84JC-1200-80.jpg);
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      color: #060558;
       line-height: 1.6;
       padding: 20px;
     }
     header {
       text-align: center;
       margin-bottom: 40px;
-      color: var(--hot-purple);
+      color: #040273;
     }
     header h1 {
       font-size: 2.8rem;
       margin-bottom: 10px;
     }
-    header p {
-      font-size: 1.2rem;
-      font-weight: 600;
-      color: var(--hot-pink);
-    }
-
     nav {
       max-width: 900px;
       margin: 0 auto 40px;
@@ -33,65 +72,71 @@
     }
     nav a {
       text-decoration: none;
-      color: var(--cool-blue);
+      color: #040273;
       padding: 8px 16px;
       border-radius: 6px;
       transition: background 0.3s ease;
       border: 2px solid transparent;
     }
-    nav a:hover, nav a.active {
-      background: var(--hot-pink);
-      color: white;
-      border-color: var(--hot-pink);
+    /* Hover and active state for the navigation links */
+       nav a:hover, nav a.active {
+      background: none;
+      color: #040273;
+      border-color: #040273;
+    }
+    section h2 {
+      color: #040273;
+      margin-bottom: 20px;
+      font-size: 2rem;
+      border-bottom: 2px solid #040273;
+      padding-bottom: 8px;
+    }
+     section p {
+      font-size: 1.1rem;
+      margin-bottom: 16px;
+      color: #040273;
+    }
+    /* section for styling background and border */
+    section {
+      max-width: 900px;
+      margin: 0 auto 50px;
+      background: #00000f;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-left: 8px solid #040273;
+    }
+    /* For the headings inside the sections */
+    section h2 {
+      color: #040273;
+      margin-bottom: 20px;
+      font-size: 2rem;
+      border-bottom: 2px solid #040273;
+      padding-bottom: 8px;
+    }
+    /* Styling for paragraphs inside the sections */
+     section p {
+      font-size: 1.1rem;
+      margin-bottom: 16px;
+      color: #040273;
     }
 
     section {
       max-width: 900px;
       margin: 0 auto 50px;
-      background: white;
+      background: #00000f;
       padding: 30px 40px;
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      border-left: 8px solid var(--orange);
+      border-left: 8px solid #00000f;
     }
-    section h2 {
-      color: var(--hot-purple);
-      margin-bottom: 20px;
-      font-size: 2rem;
-      border-bottom: 2px solid var(--hot-pink);
-      padding-bottom: 8px;
+    /* Styling for blockquotes */
+    blockquote {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #4984B8;
     }
-    section p {
-      font-size: 1.1rem;
-      margin-bottom: 16px;
-      color: var(--deep-blue);
+    /* Styling for footer */
+    footer{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color:#4984B8;
     }
-
-    ul.action-list {
-      list-style: none;
-      padding-left: 0;
-    }
-    ul.action-list li {
-      background: var(--yellow);
-      color: var(--deep-blue);
-      margin-bottom: 12px;
-      padding: 12px 18px;
-      border-radius: 8px;
-      font-weight: 600;
-      box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
-      transition: background 0.3s ease;
-      cursor: default;
-    }
-    ul.action-list li:hover {
-      background: var(--orange);
-      color: white;
-    }
-
-    @media (max-width: 650px) {
-      nav {
-        flex-direction: column;
-        align-items: center;
-      }
-      section {
-        padding: 20px;
-      }
